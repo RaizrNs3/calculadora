@@ -10,8 +10,10 @@ export class AppComponent {
   operadorA = 0;
   operadorB = 0;
   resultado = 0;
+
   suma(): void{
-    this.resultado = this.operadorA + this.operadorA;
+    this.resultado = 0;
+    this.resultado = this.operadorA + this.operadorB;
   }
 
 }
