@@ -1,11 +1,33 @@
-<h1>{{title}}</h1>
-<h3>Operando A</h3>
-<label>
-  <input type="number" class="form-control" [(ngModel)]="operadorA">
-</label>
-<h3>Operando B</h3>
-<label>
-  <input type="number" class="form-control" [(ngModel)]="operadorB">
-</label>
-<button class="btn btn-primary" (click)="suma()">Sumar</button>
-<h2>Resultado = {{resultado}}</h2>
+<div class="container">
+  <h1>{{title}}</h1>
+  <form>
+    <div class="form-group">
+      <label>Operando A:</label>
+      <label>
+        <input type="number" class="form-control" placeholder="Escribe operando A"
+               [(ngModel)]="operadorA" name="operandoA"/>
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Operando B:</label>
+      <label>
+        <input type="number" class="form-control" placeholder="Escribe operando B"
+               [(ngModel)]="operadorB" name="operandoB"/>
+      </label>
+    </div>
+    <button class="btn btn-primary" (click)="suma()">Sumar</button>
+    <p>Resultado = {{resultado}}</p>
+  </form>
+
+  <!--<h3>Operando A</h3>
+  <label>
+    <input type="number" class="form-control" [(ngModel)]="operadorA">
+  </label>
+  <h3>Operando B</h3>
+  <label>
+    <input type="number" class="form-control" [(ngModel)]="operadorB">
+  </label>
+  <button class="btn btn-primary" (click)="suma()">Sumar</button>
+  <h2>Resultado = {{resultado}}</h2>-->
+</div>
+

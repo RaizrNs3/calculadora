@@ -12,7 +12,6 @@ export class AppComponent {
   resultado = 0;
 
   suma(): void{
-    this.resultado = 0;
     this.resultado = this.operadorA + this.operadorB;
   }
 
