@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculadora con Angular.';
-  operadorA = 0;
-  operadorB = 0;
-  resultado = 0;
-
-  suma(): void{
-    this.resultado = this.operadorA + this.operadorB;
+  resultadoRecibido = 0;
+  resultadoObtenido(resultado: number): void{
+    this.resultadoRecibido = resultado;
   }
-
 }
